@@ -15,6 +15,12 @@ class ExampleStrategy extends Strategy {
     console.log(`totalDice=${totalDice}`);
     console.log(`lastActionIndex=${lastActionIndex}`);
 
+    // To respond with liar, return largest possible bid plus one
+    // return actionKey.length
+
+    // To respond with exact, return largest possible bid plus two
+    // return actionKey.length + 1
+
     if (lastActionIndex != null) {
       console.log(`lastAction=${actionKey[lastActionIndex]}`);
       return lastActionIndex + 1;
