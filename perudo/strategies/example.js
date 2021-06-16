@@ -4,12 +4,14 @@ class ExampleStrategy extends Strategy {
   
   getResponseAction() {
     const dice = this._gameState.dice;
+    const history = this._gameState.history;
     const totalDice = this._gameState.diceCount;
     const lastActionIndex = this._gameState.getLastAction();
 
     const actionKey = generateActions(totalDice);
     
     console.log(`dice=${dice}`);
+    console.log(`history=${history}`);
     console.log(`totalDice=${totalDice}`);
     console.log(`lastActionIndex=${lastActionIndex}`);
 
